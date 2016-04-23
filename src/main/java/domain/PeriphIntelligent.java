@@ -56,6 +56,13 @@ public class PeriphIntelligent {
 	}
 
 
+	@Override
+	public String toString() {
+		return "PeriphIntelligent [getId()=" + getId() + ", getConso()=" + getConso() + ", getType()=" + getType()
+				+ ", getRe()=" + getRe() + "]";
+	}
+
+
 	public void setType(String type) {
 		this.type = type;
 	}

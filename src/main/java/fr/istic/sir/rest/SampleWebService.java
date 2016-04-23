@@ -1,5 +1,7 @@
 package fr.istic.sir.rest;
 
+import java.util.List;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -9,6 +11,7 @@ import domain.Chauffage;
 import domain.EquipementE;
 import domain.Personne;
 import domain.Residence;
+import servlet.data;
 
 @Path("/hello")
 public class SampleWebService {
@@ -33,4 +36,12 @@ public class SampleWebService {
         return h;
     }
 
+    @GET
+    @Path("/listePersonne")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Personne> getListPerson() {
+    
+    	List<Personne> personnes = data.ListOfPersonne();
+	    return personnes;
+    }
 }

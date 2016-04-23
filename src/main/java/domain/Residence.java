@@ -107,7 +107,7 @@ public class Residence {
 	}
 	@Override
 	public String toString() {
-		return "Residence [nomh=" + nomh + ", idr=" + idr + ", taille=" + taille + ", nbrpiece=" + nbrpiece + ", ch="
+		return "Residence [nomh=" + nomh + ", idr2=" + idr + ", taille=" + taille + ", nbrpiece=" + nbrpiece + ", ch="
 				+ ch + ", Devis1=" + Devis1 + ", Devis2=" + Devis2 + ", eq=" + eq + ", p=" + p + "]";
 	}
 

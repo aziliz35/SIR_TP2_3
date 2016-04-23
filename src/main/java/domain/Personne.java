@@ -64,5 +64,9 @@ public class Personne {
 	public void setR(List<Residence> r) {
 		R = r;
 	}
+	@Override
+	public String toString() {
+		return "Personne [idp=" + idp + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", R=" + R + "]";
+	}
 
 }
