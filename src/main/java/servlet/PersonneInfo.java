@@ -57,7 +57,7 @@ public class PersonneInfo extends HttpServlet {
 		
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		String query = "select h from Heater as h";
+		String query = "select h from Personne as h";
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("mysql");
 		EntityManager manager = factory.createEntityManager();
 		Query q = (Query) manager.createQuery(query,Personne.class);

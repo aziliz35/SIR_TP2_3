@@ -1,5 +1,6 @@
 package fr.istic.sir.rest;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.GET;
@@ -41,7 +42,7 @@ public class SampleWebService {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Personne> getListPerson() {
     
-    	List<Personne> personnes = data.ListOfPersonne();
+    	List<Personne> personnes = data.ListePersonne();
 	    return personnes;
     }
 }
